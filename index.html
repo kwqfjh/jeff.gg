@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Discord Bot</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0e0e0e;
+      color: #f0f0f0;
+    }
+
+    header {
+      background: #1f1f1f;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #00bfff;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .features, .pricing, .contact {
+      margin-bottom: 40px;
+    }
+
+    .pricing-table {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+    }
+
+    .plan {
+      background: #1c1c1c;
+      padding: 20px;
+      border: 2px solid #00bfff;
+      border-radius: 10px;
+      width: 250px;
+    }
+
+    .plan h2 {
+      color: #00ffae;
+    }
+
+    .plan ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .plan li {
+      margin: 8px 0;
+    }
+
+    form input, form textarea, form button {
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+      font-size: 1rem;
+    }
+
+    form button {
+      background-color: #00bfff;
+      color: white;
+      cursor: pointer;
+    }
+
+    a.button {
+      background: #00ffae;
+      padding: 10px 20px;
+      border-radius: 6px;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1f1f1f;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>RoastGuard Discord Bot</h1>
+    <p>The ultimate moderation, music, and roast machine. Upgrade to Premium for full power!</p>
+    <a href="https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&scope=bot" class="button">Invite the Bot</a>
+  </header>
+
+  <section class="features">
+    <h2>Main Features</h2>
+    <ul>
+      <li>✅ Automatic moderation (free)</li>
+      <li>✅ Funny roast replies when insulted (premium)</li>
+      <li>✅ Music playback via YouTube Music (premium)</li>
+      <li>✅ Kick/Ban commands (premium)</li>
+    </ul>
+  </section>
+
+  <section class="pricing">
+    <h2>Pricing</h2>
+    <div class="pricing-table">
+      <div class="plan">
+        <h2>Free Plan</h2>
+        <ul>
+          <li>✅ Basic moderation</li>
+          <li>❌ No music or roast replies</li>
+          <li>❌ No premium moderation</li>
+        </ul>
+      </div>
+      <div class="plan">
+        <h2>Premium Plan</h2>
+        <ul>
+          <li>✅ All free features</li>
+          <li>✅ Roast responses</li>
+          <li>✅ Music from YouTube</li>
+          <li>✅ Kick, Ban, Timeout</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Have questions or want to request a feature?</p>
+    <form action="https://formspree.io/f/yourFormID" method="POST">
+      <input type="text" name="name" placeholder="Your name" required />
+      <input type="email" name="email" placeholder="Your email" required />
+      <textarea name="message" placeholder="Your message" rows="5" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 RoastGuard Bot. All rights reserved.
+  </footer>
+</body>
+</html>
